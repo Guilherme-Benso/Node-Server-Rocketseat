@@ -1,0 +1,32 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+# passando o tipo de dados que vai ser enviado nessa request
+
+# Pode-se passar por exemplo qual a lang que vai ser enviado a request para o server responder na mesma lang
+# Accept-Language: pt
+# pasando um "body" que é tipo um padrão para o front retornar
+
+{
+ "title": "Video node",
+ "description": "este o segundo video",
+ "duration": "18"
+}
+
+###
+
+GET http://localhost:3333/videos?search=node
+
+###
+
+PUT http://localhost:3333/videos/815c6436-0c22-4f3f-9ede-eb1da5d3f105
+Content-Type: application/json
+
+{
+ "title": "Video node-node",
+ "description": "este o video de node",
+ "duration": "38"
+}
+
+###
+
+DELETE http://localhost:3333/videos/815c6436-0c22-4f3f-9ede-eb1da5d3f105
